@@ -1,4 +1,4 @@
-public class Ejecutar {
+public class EjecutarClase {
     public static void main(String[] args) {
 
         // creacion de los objetos de la clase vehiculos
@@ -10,14 +10,19 @@ public class Ejecutar {
         Vehiculo objVehiculo2;
         objVehiculo2 = new Vehiculo("ferrari", "rojo", 5000.0, "sewr45i", 1.8, "450hp");
 
-        //mostrar la marca del vehiculo del objeto vehiculo1
+        // mostrar la marca del vehiculo del objeto vehiculo1
         System.out.println(objVehiculo1.getMarca());
 
-        //se va a modificar la marca del vehiculo objeto objvehiculo1
+        // se va a modificar la marca del vehiculo objeto objvehiculo1
         objVehiculo1.setMarca("checrolet");
 
-        //mostrar todo el objeto 
+        // mostrar todo el objeto
         System.out.println(objVehiculo1.toString());
         System.out.println(objVehiculo2);
+
+        System.out.println(objVehiculo1.getMarca());
+        objVehiculo1.acelerar();
+        System.out.println(objVehiculo2.getMarca());
+       objVehiculo2.frenar();
     }
 }
