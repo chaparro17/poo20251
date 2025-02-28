@@ -29,29 +29,31 @@ public class Vehiculo {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    //permite mostrar el objeto
+
+    // permite mostrar el objeto
     public String toString() {
         return "Vehiculo { Marca: " + marca + " Color: " + color + " Cilindraje: " + cilindraje + " Chasis: " + chasis
                 + " Peso: " + peso + " Potencia: " + potencia + " }";
     }
 
-    //metodos de la clase propios 
-    public void acelerar(){
+    // metodos de la clase propios
+    public void acelerar() {
         System.out.println("Vehiculo acelerando.....");
     }
 
-    public void frenar(){
+    public void frenar() {
         System.out.println("Vehiculo frenando.....");
-}
-    public void girarIzquierda(){
-    System.out.println("Vehiculo girando izquierda.....");
-}
+    }
 
-public void girarDerecha(){
-    System.out.println("Vehiculo girando derecha.....");
-}
+    public void girarIzquierda() {
+        System.out.println("Vehiculo girando izquierda.....");
+    }
 
-public void retroceder(){
-    System.out.println("Vehiculo retrocediendo.....");
-}
+    public void girarDerecha() {
+        System.out.println("Vehiculo girando derecha.....");
+    }
+
+    public void retroceder() {
+        System.out.println("Vehiculo retrocediendo.....");
+    }
 }
