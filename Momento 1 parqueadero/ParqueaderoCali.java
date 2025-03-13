@@ -9,6 +9,16 @@ public static void main(String[] args) {
     int[] minutosIngresoAlto = new int[10];
     int opcion; 
 
-    
-}    
+    do{
+    System.out.println("\nMenu opciones:");
+    System.out.println("1.Registrar moto");
+    System.out.println("2.Cobrar tarifa");
+    System.out.println("3.Visualizar estado parqueadero");
+    System.out.println("4.Abandonar manu");
+    System.out.print("Digite una opcion: ");
+    opcion = sc.nextInt();
+    sc.nextLine(); //Limpiar buffer 
+    }
+
+}
 }
