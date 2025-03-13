@@ -29,8 +29,30 @@ public static void main(String[] args) {
         
         String[]timepo= sc.nextLine().split(":");
         int minutosIngreso = Integer.parseInt(timepo[0]) * 60 + Integer.parseInt(timepo[1]);
+
+        if (cilindraje < 400){
+            System.out.println("Digite la posicion (1-20):");
+            int pos = sc.nextInt()-1;
+            if (pos >=0 && pos < 20 && bajoCilindraje[pos] == null){
+                bajoCilindraje[pos] = placa;
+                minutosIngresoBajo[pos]=minutosIngreso;
+                System.out.println("Moto registrada en puesto" + (pos + 1));
+            }else{
+                System.out.println("Posicion ocupada o invalida.");
+            }
+        }else{
+            System.out.println("Digite la posicion (1-10):");
+            int pos = sc.nextInt()-1;
+            if (pos >=0 && pos < 10 &&altoCilindraje[pos]==null){
+                altoCilindraje[pos]=placa;
+                minutosIngresoAlto[pos]=minutosIngreso;
+                System.out.println("Moto registrada en puesto" + (pos + 1));
+            }else {
+                System.out.println("Posicion ocupada o invalida.");
+            }
+        }
     }
-    }
+}
 
 }
 }
