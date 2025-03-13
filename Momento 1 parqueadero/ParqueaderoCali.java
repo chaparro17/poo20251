@@ -18,6 +18,18 @@ public static void main(String[] args) {
     System.out.print("Digite una opcion: ");
     opcion = sc.nextInt();
     sc.nextLine(); //Limpiar buffer 
+
+    if (opcion == 1){
+        System.out.println("Digite la placa de la moto:");
+        String placa = sc.next();
+        System.out.println("Digite cilindraje de la moto");
+        int cilindraje = sc.nextInt();
+        sc.nextLine(); //limpiar buffer 
+        System.out.println("Digite la hora de ingreso en formato HH:MM (ejemplo 12:30):");
+        
+        String[]timepo= sc.nextLine().split(":");
+        int minutosIngreso = Integer.parseInt(timepo[0]) * 60 + Integer.parseInt(timepo[1]);
+    }
     }
 
 }
