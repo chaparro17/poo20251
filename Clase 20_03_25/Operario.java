@@ -1,5 +1,5 @@
 
-public class Operario extends Trabajador {
+public class Operario extends Trabajador{
 
     private double horas;
     public final double SALARIO_BASE = 100.0; // Constante
