@@ -13,7 +13,7 @@ public abstract class Personaje {
 
     public void atacar(Personaje oponente) {
         Random rand = new Random();
-        int dano = rand.nextInt((MAX_DANO - MIN_DANO) + 1) + MIN_DANO;
+        int dano = rand.nextInt((MAX_DANO - MIN_DANO + 1)) + MIN_DANO;
         oponente.recibirDano(dano);
         System.out.println(this.nombre + " ataca a " + oponente.getNombre() + " causando " + dano + " puntos de daño.");
     }

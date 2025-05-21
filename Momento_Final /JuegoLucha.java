@@ -10,7 +10,7 @@ public class JuegoLucha {
     }
 
     public void iniciarPelea() {
-        System.out.println("La pelea comienza entre " + jugador1.getNombre() + " y " + jugador2.getNombre() + "...\n");
+        System.out.println("🔥 La pelea comienza entre " + jugador1.getNombre() + " y " + jugador2.getNombre() + "...\n");
 
         while (jugador1.estaVivo() && jugador2.estaVivo()) {
             turno(jugador1, jugador2);
@@ -20,9 +20,9 @@ public class JuegoLucha {
         }
 
         if (jugador1.estaVivo()) {
-            System.out.println("\n" + jugador1.getNombre() + " ha ganado la pelea.");
+            System.out.println("\n🏆 " + jugador1.getNombre() + " ha ganado la pelea.");
         } else {
-            System.out.println("\n" + jugador2.getNombre() + " ha ganado la pelea.");
+            System.out.println("\n🏆 " + jugador2.getNombre() + " ha ganado la pelea.");
         }
     }
 
@@ -34,15 +34,17 @@ public class JuegoLucha {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el nombre del Guerrero: ");
+
+        System.out.print("Introduce el nombre del Dragón: ");
         String nombre1 = scanner.nextLine();
-        System.out.print("Introduce el nombre del Hechicero: ");
+
+        System.out.print("Introduce el nombre del Cazador: ");
         String nombre2 = scanner.nextLine();
 
-        Personaje guerrero = new Guerrero(nombre1);
-        Personaje hechicero = new Hechicero(nombre2);
+        Personaje dragon = new Dragon(nombre1);
+        Personaje cazador = new Cazador(nombre2);
 
-        JuegoLucha juego = new JuegoLucha(guerrero, hechicero);
+        JuegoLucha juego = new JuegoLucha(dragon, cazador);
         juego.iniciarPelea();
     }
 }
